@@ -123,20 +123,20 @@ nav ul li a {
 
 /*        Main section */
 main {
-  padding: 20px;
+  padding: 50px;
 }
 
 .container{
-  height: 500px;
-  width: 550px;
+  height: 335px;
+  width: auto;
 }
 
 section {
-  margin-bottom: 20px;
+  margin: 30px;
   background: #fff;
   padding: 20px;
   border-radius: 40px;
-  display: block;
+  display: inline-block;
 }
 #tips{
   margin-left: 20px;
@@ -146,7 +146,11 @@ section {
 aside{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
+}
+
+img{
+  border-radius: 20px;
 }
 
 
