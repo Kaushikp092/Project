@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GymFit - Member Login</title>
+    <link rel="stylesheet" href="Login.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/104/104668.png"
+        alt="Gym Logo"
+        class="gym-logo"
+      />
+      <h1>Member Login</h1>
+      <div class="error-message" id="errorMessage"></div>
+      <form id="loginForm" method="post">
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" required />
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" required />
+        </div>
+        <button type="submit" class="login-btn">Login</button>
+      </form>
+      <div class="links">
+        <a href="#">Forgot Password?</a>
+        <a href="Signup.html">Create Account</a>
+      </div>
+    </div>
+    <script src="Login.js"></script>
+  </body>
+</html>

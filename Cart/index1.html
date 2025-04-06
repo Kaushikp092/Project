@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Cart Page</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gym Cart</h1>
+
+        <div class="cart-items">
+            <h2>Your Cart</h2>
+            <ul id="cartList">
+                <!-- Cart items will be added here dynamically -->
+            </ul>
+        </div>
+
+        <div class="cart-summary">
+            <p>Total Price: $<span id="totalPrice">0.00</span></p>
+            <button onclick="checkout()">Checkout</button>
+        </div>
+
+        <div class="products">
+            <h2>Available Products</h2>
+            <div class="product" onclick="addToCart('Dumbbell', 29.99)">
+                <img src="https://via.placeholder.com/150" alt="Dumbbell">
+                <p>Dumbbell - $29.99</p>
+            </div>
+            <div class="product" onclick="addToCart('Yoga Mat', 19.99)">
+                <img src="https://via.placeholder.com/150" alt="Yoga Mat">
+                <p>Yoga Mat - $19.99</p>
+            </div>
+            <div class="product" onclick="addToCart('Protein Powder', 39.99)">
+                <img src="https://via.placeholder.com/150" alt="Protein Powder">
+                <p>Protein Powder - $39.99</p>
+            </div>
+            <div class="product" onclick="addToCart('Resistance Bands', 14.99)">
+                <img src="https://via.placeholder.com/150" alt="Resistance Bands">
+                <p>Resistance Bands - $14.99</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gym Cart</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Gym Cart</h1>
+        <table id="cart">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Protein Powder</td>
+                    <td class="price">$29.99</td>
+                    <td>
+                        <input type="number" value="1" min="1" class="quantity" onchange="updateTotal()" />
+                    </td>
+                    <td class="total">$29.99</td>
+                    <td><button onclick="removeItem(this)">Remove</button></td>
+                </tr>
+                <tr>
+                    <td>Dumbbells</td>
+                    <td class="price">$49.99</td>
+                    <td>
+                        <input type="number" value="1" min="1" class="quantity" onchange="updateTotal()" />
+                    </td>
+                    <td class="total">$49.99</td>
+                    <td><button onclick="removeItem(this)">Remove</button></td>
+                </tr>
+                <tr>
+                    <td>Yoga Mat</td>
+                    <td class="price">$19.99</td>
+                    <td>
+                        <input type="number" value="1" min="1" class="quantity" onchange="updateTotal()" />
+                    </td>
+                    <td class="total">$19.99</td>
+                    <td><button onclick="removeItem(this)">Remove</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="total-price">
+            <h2>Total: <span id="grandTotal">$99.97</span></h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

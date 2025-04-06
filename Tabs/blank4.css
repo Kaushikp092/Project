@@ -1,0 +1,50 @@
+*{
+     margin: 0%;
+     padding: 0%;
+     border: border-box;
+}
+.navbar{
+     height: 60px; 
+     /* background-color: #1b242d;
+     color: white; */
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+.nav-logo{
+     height: 95px;
+     width: 150px;
+}
+.logo{
+     background-image: url("photos/logo2.jpg");
+     background-size: cover;
+     height: 95px;
+     width: 100%;
+
+}
+.nav-home{
+     color: whitesmoke;
+     visibility: hidden;
+}
+.nav-cart{
+     color: whitesmoke;
+}
+.nav-login{
+     color: whitesmoke;
+}
+
+a{
+     text-decoration: none;
+     color: antiquewhite;
+}
+body{
+     background-image: url("photos/bg.jpg");
+     background-size: 100%;
+     background-repeat: no-repeat;
+}
+.border{
+     border: 1.5px solid transparent;
+}
+.border:hover{
+     border: 1.5px solid white;
+}
