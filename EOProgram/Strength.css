@@ -121,13 +121,15 @@ nav ul li a {
 }
 
 
-/*        Main section */
+
+
+/*                  Main section */
 main {
   padding: 50px;
 }
 
 .container{
-  height: 335px;
+  height: 340px;
   width: auto;
 }
 
@@ -144,6 +146,10 @@ section {
   margin-left: 20px;
   padding: 30px;
 }
+ul {
+  list-style: square;
+  padding-left: 10px;
+}
 
 aside{
   display: flex;
@@ -156,7 +162,7 @@ img{
 }
 
 
-/*         Footer section */
+/*                    Footer section */
 
 footer {
   padding: 10px 0;

@@ -3,5 +3,8 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnPaste": true,
   "livePreview.defaultPreviewPath": "/EOProgram/Strength.html",
-  "editor.tabSize": 5
+  "editor.tabSize": 5,
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
