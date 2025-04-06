@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
@@ -21,7 +21,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: #111317;
 }
 
@@ -40,14 +40,13 @@ body {
   gap: 100px;
 }
 
-
 .nav-logo {
   height: 60px;
   width: 110px;
 }
 
 .logo {
-  font-family: "Anton", serif;
+  font-family: 'Anton', serif;
   font-size: 40px;
 }
 
@@ -71,10 +70,9 @@ a {
 }
 
 body {
-  background-image: url("photos/bg.jpg");
+  background-image: url('photos/bg.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
-
 }
 
 .underline {
@@ -90,7 +88,7 @@ body {
   background-color: white;
   bottom: 0;
   left: 0;
-  transition: width .5s ease;
+  transition: width 0.5s ease;
 }
 
 .underline:hover::after {
@@ -120,6 +118,50 @@ nav ul li a {
   text-decoration: none;
 }
 
+/*        Main  */
+main {
+  padding: 30px;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Benefits {
+  margin: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 40px;
+  display: inline-block;
+  max-width: 500px;
+}
+
+#Tips {
+  margin: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 40px;
+  display: inline-block;
+  max-width: 500px;
+}
+
+ul {
+  list-style: square;
+  padding-left: 10px;
+}
+
+aside {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+img {
+  border-radius: 20px;
+  height: 250px;
+  width: 360px;
+}
 
 /*         Footer section */
 
@@ -127,11 +169,10 @@ footer {
   padding: 10px 0;
   background: #333;
   color: #fff;
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
 }
-
 
 .footer-container {
   display: flex;
