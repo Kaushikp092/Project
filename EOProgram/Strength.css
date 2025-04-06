@@ -139,6 +139,8 @@ section {
   display: inline-block;
 }
 #tips{
+  position: absolute;
+  top: auto;
   margin-left: 20px;
   padding: 30px;
 }
