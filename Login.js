@@ -43,6 +43,6 @@ const loginForm = document.getElementById('loginForm');
             setTimeout(() => {
                 errorMessage.style.display = 'none';
                 // Redirect to dashboard or home page
-                window.location.href = 'dashboard.html';
+                window.location.href = '/Project.html';
             }, 2000);
         }
