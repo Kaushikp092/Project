@@ -1,48 +1,48 @@
 const loginForm = document.getElementById('loginForm');
-        const errorMessage = document.getElementById('errorMessage');
+const errorMessage = document.getElementById('errorMessage');
 
-        loginForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const email = document.getElementById('email').value;
-            const password = document.getElementById('password').value;
+loginForm.addEventListener('submit', function (e) {
+    e.preventDefault();
 
-            // Simple validation
-            if (!validateEmail(email)) {
-                showError('Please enter a valid email address');
-                return;
-            }
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
 
-            if (password.length < 6) {
-                showError('Password must be at least 6 characters');
-                return;
-            }
+    // Simple validation
+    if (!validateEmail(email)) {
+        showError('Please enter a valid email address');
+        return;
+    }
 
-            // Simulate successful login
-            showSuccess('Login successful! Redirecting...');
-            // Here you would typically make an API call to your backend
-        });
+    if (password.length < 6) {
+        showError('Password must be at least 6 characters');
+        return;
+    }
 
-        function validateEmail(email) {
-            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            return re.test(email);
-        }
+    // Simulate successful login
+    showSuccess('Login successful! Redirecting...');
+    // Here you would typically make an API call to your backend
+});
 
-        function showError(message) {
-            errorMessage.textContent = message;
-            errorMessage.style.display = 'block';
-            setTimeout(() => {
-                errorMessage.style.display = 'none';
-            }, 3000);
-        }
+function validateEmail(email) {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
+}
 
-        function showSuccess(message) {
-            errorMessage.style.color = '#2ecc71';
-            errorMessage.textContent = message;
-            errorMessage.style.display = 'block';
-            setTimeout(() => {
-                errorMessage.style.display = 'none';
-                // Redirect to dashboard or home page
-                window.location.href = '/Project.html';
-            }, 2000);
-        }
+function showError(message) {
+    errorMessage.textContent = message;
+    errorMessage.style.display = 'block';
+    setTimeout(() => {
+        errorMessage.style.display = 'none';
+    }, 3000);
+}
+
+function showSuccess(message) {
+    errorMessage.style.color = '#2ecc71';
+    errorMessage.textContent = message;
+    errorMessage.style.display = 'block';
+    setTimeout(() => {
+        errorMessage.style.display = 'none';
+        // Redirect to dashboard or home page
+        window.location.href = '/Project.html';
+    }, 2000);
+}
