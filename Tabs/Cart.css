@@ -102,11 +102,13 @@ a{
 
 
 
+
 /*          Empty message container */
 
 .empty-msg-container{
   margin: 20px 30px;
-  height: 200px;
+  min-height: 200px;
+  height: auto;
   width: 85%;
   background-color: whitesmoke;
 }
@@ -132,6 +134,22 @@ a{
   padding: 20px 30px;
 }
 
+i{
+  position: relative;
+  right: 0px;
+}
+
+.hide{
+  display: none;
+}
+
+.add{
+  height: 200px;
+  width: 200px;
+  border: 1px solid black;
+  background-color: cadetblue;
+  margin: 20px;
+}
 
 
 

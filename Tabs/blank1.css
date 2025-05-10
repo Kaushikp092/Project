@@ -59,6 +59,12 @@ body {
   color: whitesmoke;
 }
 
+.cart-count{
+  position: relative;
+  left: 20px;
+  bottom: 13px;
+}
+
 .nav-login {
   color: whitesmoke;
 }

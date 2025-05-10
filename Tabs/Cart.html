@@ -48,13 +48,12 @@
 
 
     <!-- If shopping cart is empty -->
-    <div class="empty-msg-container hide">
+    <div class="empty-msg-container">
       <h2>Your FitGym Cart is empty</h2>
       <p>Your shopping cart is waiting. Give it purpose – fill it with resistance bands, Yoga Mat, Protein powder and
         more.</p>
       <p>Continue shopping on the <a href="/Project.html" id="span">FitGym.in</a> homepage.</p>
     </div>
-
 
     <!-- If any item add to cart -->
     <div class="msg-container">
@@ -105,7 +104,8 @@
       <p>&copy; 2025 FitGym. All rights reserved.</p>
     </div>
   </footer>
-  <script>
+
+  <!-- <script>
     // Retrieve cart items from local storage
     const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
     const cartItemsContainer = document.getElementById('cart-items');
@@ -129,8 +129,7 @@
       alert('Proceeding to checkout...');
       // Implement checkout logic here
     });
-  </script>
-
+  </script> -->
   <script src="Cart.js"></script>
 </body>
 
